@@ -6,7 +6,11 @@
 
 3.1.2 基本数据类型: 
 
-		数值:  整数类型  byte short int long  浮点型: float double  
+		数值
+		
+			整数类型  byte short int long  
+			
+			浮点型: float double  
 		
 		字符型 char  
 		
@@ -55,9 +59,9 @@
 		
 3.1.6 字符型
 
-		char
+		char  单引号
 		
-		Java使用Unicode编码   16位
+		Java使用Unicode编码   16位  两个字节
 		
 		char 单个字符  如果用字符串 使用String类
 		
