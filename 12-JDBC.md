@@ -279,5 +279,18 @@
 
 
 ![JDBC 和 ODBC 桥接](./桥接.jpg)	
+	
+	没有实现JDBC的数据库 就需要JDBC和ODBC桥接方式
+	
 
+![DAO](./DAO-1.jpg)		
+
+#### 12.8 DAO
+
+	12.8.1 DAO
+	
+		data access object  数据访问层
+		
+		
+		
 	
