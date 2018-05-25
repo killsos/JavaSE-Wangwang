@@ -230,6 +230,26 @@
 			
 				int row = sta.executeUpdate(sql语句);
 				
+					sql语句:
+					
+						DML insert update delete
+						
+						DDL create drop等										
+					
+				ResultSet rs = sta.executeQuery(select语句);
+				
+					rs里面有个指针指向第一条记录的之上的位置
+					
+						rs.next() 
+							
+							判断是否下一行
+							
+							如果有 则移动到下一行 并且返回true 否则false
+							
+							rs.getXXX 列名 下标(下标从1开始注意这个小特色) 都可以
+							
+							
+				
 		DML（data manipulation language）
 		
 		       它们是SELECT、UPDATE、INSERT、DELETE，就象它的名字一样，这4条命令是用来对数据库里的数据进行操作的语言
@@ -255,6 +275,8 @@
 ![数据库加载 连接 执行](./jdbc.jpg)
 			
 		
-				
+#### 12.7 桥接与直连
+
+		
 
 	
