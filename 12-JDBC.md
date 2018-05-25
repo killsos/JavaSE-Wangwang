@@ -195,13 +195,66 @@
 		2 DriverManager
 		
 			驱动程序管理者
+		
+			通过getDirvers方法 得到当前在此注册的所有数据库驱动程序的集合
 			
-			运行时异常
+				Enumeration<Driver> drivers = DriverManager.getDirvers();
+		
+	操作
+		
+		1. 给项目添加jar包
 			
-			# 获得注册成功的数据库驱动
-			Enumeration<Driver> drivers = DriverManager.getDirvers();
+			直接添加
 			
-							
+			在项目建立文件夹放入
+		
+		2. 加载驱动程序
+			
+			Driver接口所完成功能
+			
+		3. 得到连接
+			
+			Connection con = DriverManager.getConnection(url ,username, passward)	
+			
+			url = ip + port + dbName
+			
+		4. 得到statement
+		
+				Statement sta = con.createStatement();
+				
+		5. 执行sql语句
+		
+			DML: create insert  update delete
+			
+			DDL: Create drop 
+			
+				int row = sta.executeUpdate(sql语句);
+				
+		DML（data manipulation language）
+		
+		       它们是SELECT、UPDATE、INSERT、DELETE，就象它的名字一样，这4条命令是用来对数据库里的数据进行操作的语言
+			   
+		DDL（data definition language）
+		
+		       DDL比DML要多，主要的命令有CREATE、ALTER、DROP等，DDL主要是用在定义或改变表（TABLE）的结构，数据类型
+			   
+			   表之间的链接和约束等初始化工作上，他们大多在建立表时使用
+			   
+		6. 收尾 关闭操作
+		
+			sta.close()
+			
+			sta = null
+			
+			con.close()
+			
+			con = null
+			
+
+
+![数据库加载 连接 执行](./jdbc.jpg)
+			
+		
 				
 
 	
