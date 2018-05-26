@@ -291,6 +291,28 @@
 	
 		data access object  数据访问层
 		
+			实现方法:
+				
+				save  update delete findAll findById
+	
+	调用sql包里的任何类或者方法都会包异常
+	
+	自动生成代码快捷键: alt + cmd + s
 		
-		
+	
+#### 12.9 PreparedStatement
+
+12.9.1 PreparedStatement类方法
+
+	setString(1, "1234")  // 1 第一个字段
+	
+	executeUpdate(); // 真正执行sql
+	
+	addBatch()
+	
+	executeBatch()
+	
+	executeQuery()
+	
+	防止sql注入
 	
